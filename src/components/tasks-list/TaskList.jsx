@@ -9,7 +9,7 @@ function TaskList(props) {
   return (
     <section>
       {props.data.map((task) => (
-        <TaskCard task={task} />
+        <TaskCard task={task} key={task.id} dropTask={props.dropTask} />
       ))}
     </section>
   );

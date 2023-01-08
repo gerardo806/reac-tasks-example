@@ -1,7 +1,8 @@
-.card{
-    border: medium solid green;
-    border-radius: 8px;
-    width: 300px;
-    margin: 10px auto;
-    text-align: center;
+.card {
+  border: medium solid green;
+  border-radius: 8px;
+  width: 300px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px 0;
 }
