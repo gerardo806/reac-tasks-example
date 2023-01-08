@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { MainContext } from "../../context/MainContext";
 
-function FormTask({ createTask }) {
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
+function FormTask() {
+  const { createTask } = useContext(MainContext),
+    [title, setTitle] = useState(""),
+    [description, setDescription] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
     createTask({ title, description });
